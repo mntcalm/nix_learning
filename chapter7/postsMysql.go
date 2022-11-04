@@ -52,7 +52,7 @@ func readpost(PPP, PPC chan int) int {
 	Ccompost := make(chan CommIt)
 	CCC := make(chan int)
 	postnom := <-PPP
-	//fmt.Println(postnom)
+	//fmt.Println(postnom) комментарии
 
 	cmt := []CommIt{}
 	url := "https://jsonplaceholder.typicode.com/comments?postId=" + strconv.Itoa(postnom)
